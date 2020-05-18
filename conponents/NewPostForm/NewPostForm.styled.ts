@@ -15,6 +15,7 @@ export const StyledTitleInput = styled.input`
 export const StyledTextarea = styled.textarea`
     display: block;
     width: 100%;
+    height: 200px;
     margin-top: 20px;
     padding: 15px;
     border: none;
@@ -24,6 +25,7 @@ export const StyledTextarea = styled.textarea`
 
     @media (min-width: 768px) {
         margin-top: 60px;
+        height: 500px;
     }
 `;
 

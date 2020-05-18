@@ -5,12 +5,15 @@ import IState from '../../redux/rootState';
 import { fetchSinglePost } from '../../redux/getSinglePost/getSinglePostOperations';
 
 // components
+import Loader from 'react-loader-spinner';
+import { StyledLoaderWrp } from '../../conponents/Loader/LoaderWrp.styled';
 import PageTemplate from '../../conponents/PageTemplate/PageTemplate';
 import EditPostForm from '../../conponents/EditPostForm/EditPostForm';
 import { StyledPageTitle } from '../../conponents/PageTitle/PageTitle.styled';
 
 const New: React.FC<{}> = () => {
     const post = useSelector((state: IState) => state.singlePost.post);
+    const loading = useSelector((state: IState) => state.singlePost.loading);
     const dispatch = useDispatch();
 
     // get post by id from query string
@@ -23,7 +26,14 @@ const New: React.FC<{}> = () => {
     return (
         <PageTemplate>
             <StyledPageTitle>Edit the post</StyledPageTitle>
-            <EditPostForm initTitle={title} initBody={body} postId={postId} />
+
+            {loading ? (
+                <StyledLoaderWrp>
+                    <Loader type="Puff" color="#00BFFF" height={100} width={100} timeout={3000} />
+                </StyledLoaderWrp>
+            ) : (
+                <EditPostForm initTitle={title} initBody={body} postId={postId} />
+            )}
         </PageTemplate>
     );
 };

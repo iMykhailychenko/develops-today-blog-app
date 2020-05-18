@@ -4,6 +4,7 @@ export const StyledPostList = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 70px 20px;
+    padding-top: 80px;
 
     @media (min-width: 600px) {
         grid-template-columns: 1fr 1fr;

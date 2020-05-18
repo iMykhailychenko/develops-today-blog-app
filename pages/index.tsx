@@ -5,8 +5,8 @@ import { fetchPosts } from '../redux/getPosts/getPostsOperations';
 
 // components
 import Loader from 'react-loader-spinner';
-import WritePostBtn from '../conponents/WritePostBtn/WritePostBtn';
 import { StyledLoaderWrp } from '../conponents/Loader/LoaderWrp.styled';
+import WritePostBtn from '../conponents/WritePostBtn/WritePostBtn';
 import PageTemplate from '../conponents/PageTemplate/PageTemplate';
 import PostThumbnail from '../conponents/PostThumbnail/PostThumbnail';
 import { StyledPageTitle } from '../conponents/PageTitle/PageTitle.styled';
