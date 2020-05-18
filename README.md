@@ -21,10 +21,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ### If you whoul like to open this project on the localhost, folow next steps:
 
 First, download this project into your pc
+
 Next, open project folder and run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
