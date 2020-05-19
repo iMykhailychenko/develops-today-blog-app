@@ -4,7 +4,15 @@ import { ISinglePost } from '../../interfaces/interfaces';
 import { pushComment } from '../../redux/pushComment/pushCommentOperations';
 
 // components
-import { StyledText, StyledCommentsTitle, StyledCommentsItem, StyledTextarea, StyledSubmit } from './PostContent.styed';
+import {
+    StyledText,
+    StyledCommentsTitle,
+    StyledCommentsItem,
+    StyledCommentText,
+    StyledTextarea,
+    StyledSubmit,
+    StyledUser,
+} from './PostContent.styed';
 
 const PostContent: React.FC<ISinglePost> = ({ id, body, comments }) => {
     const [comment, setComment] = useState('');
@@ -34,7 +42,13 @@ const PostContent: React.FC<ISinglePost> = ({ id, body, comments }) => {
                     <StyledCommentsTitle>Comments:</StyledCommentsTitle>
                     <ul>
                         {comments.map(({ body }, index) => (
-                            <StyledCommentsItem key={index}>{body}</StyledCommentsItem>
+                            <StyledCommentsItem key={index}>
+                                <img src="/user.png" alt="" />
+                                <div>
+                                    <StyledUser>Anonymous user</StyledUser>
+                                    <StyledCommentText>{body}</StyledCommentText>
+                                </div>
+                            </StyledCommentsItem>
                         ))}
                     </ul>
                 </>

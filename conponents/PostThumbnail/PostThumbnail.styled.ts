@@ -94,3 +94,13 @@ export const StyledPostText = styled.p`
         font-size: 1rem;
     }
 `;
+
+export const StyledNoPost = styled.p`
+    font-size: 1.2rem;
+    text-align: center;
+
+    @media (min-width: 600px) {
+        font-size: 1rem;
+        text-align: center;
+    }
+`;

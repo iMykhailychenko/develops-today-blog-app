@@ -22,9 +22,18 @@ export const StyledCommentsTitle = styled.h4`
 `;
 
 export const StyledCommentsItem = styled.li`
-    padding: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
     font-size: 1rem;
-    border-bottom: 1px solid rgb(200, 200, 200);
+
+    img {
+        width: 50px;
+        margin-top: 5px;
+        margin-right: 30px;
+    }
 `;
 
 export const StyledTextarea = styled.textarea`
@@ -52,4 +61,13 @@ export const StyledSubmit = styled.button`
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
     font-weight: 300;
+`;
+
+export const StyledUser = styled.p`
+    padding-bottom: 10px;
+    font-weight: 700;
+`;
+
+export const StyledCommentText = styled.p`
+    font-size: 1rem;
 `;
