@@ -1,7 +1,7 @@
 import { IAllPosts, ISinglePost } from '../interfaces/interfaces';
 
 // fetch all posts
-export const FETCH_POSTS_START = 'SWITCH_THEME';
+export const FETCH_POSTS_START = 'FETCH_POSTS_START';
 export const FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS';
 export const FETCH_POSTS_ERROR = 'FETCH_POSTS_ERROR';
 

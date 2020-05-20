@@ -89,6 +89,7 @@ export const StyledPostTitle = styled.h3`
 
 export const StyledPostText = styled.p`
     font-size: 1.2rem;
+    word-break: break-word;
 
     @media (min-width: 600px) {
         font-size: 1rem;
