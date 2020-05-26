@@ -1,6 +1,6 @@
 ## Develops today / blog app
 
-This project is hosts on https://vercel.com/
+This project is hosts on [vercel](https://vercel.com/)
 
 ``` You can open live page by folowing this link``` - [Project web page](https://develops-today-blog-app.now.sh/)
 
