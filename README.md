@@ -1,4 +1,3 @@
-
 ## Develops today / blog app
 
 This project is hosts on [vercel](https://vercel.com/)
